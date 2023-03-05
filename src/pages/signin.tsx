@@ -28,6 +28,7 @@ const Signin = () => {
     await axios.post("/api/attachIot", {
       identityId,
     });
+    router.push("/")
   };
   return (
     <div className="flex justify-center items-center h-screen">

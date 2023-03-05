@@ -1,7 +1,8 @@
-import Head from 'next/head'
-import { Inter } from 'next/font/google'
+import Head from "next/head";
+import { Inter } from "next/font/google";
+import Link from "next/link";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -12,7 +13,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-  
+      <div className="flex justify-center items-center h-screen">
+        <div className="flex flex-col gap-4">
+          Revisa la consola. Pero antes asegurate de estar logueado
+          <Link href={"/signup"}>Crear cuenta</Link>
+          <Link href={"/signin"}>Iniciar sesion</Link>
+        </div>
+      </div>
     </>
-  )
+  );
 }

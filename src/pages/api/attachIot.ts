@@ -28,6 +28,7 @@ export default async function handler(
   await new Promise((resolve, reject) => {
     iot.attachPolicy(
       { policyName: "Iot-Policy", target: identityId },
+      //@ts-ignore
       (err, data) => {
         if (err) {
           console.log(err);
