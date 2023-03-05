@@ -13,8 +13,8 @@ export default async function handler(
   const iot = new IoT({
     
     credentials: {
-      accessKeyId: process.env.AWS_KEY_ID as string,
-      secretAccessKey: process.env.AWS_SECRET_KEY as string,
+      accessKeyId: process.env.MY_AWS_KEY_ID as string,
+      secretAccessKey: process.env.MY_AWS_SECRET_KEY as string,
     },
     region: "us-east-1",
     endpoint: "https://iot.us-east-1.amazonaws.com",
