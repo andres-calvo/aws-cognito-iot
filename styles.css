@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  button {
+    @apply rounded-md p-4 !bg-blue-500 text-black;
+  }
+  button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+  input {
+    @apply border border-gray-500 rounded-md;
+  }
+}
